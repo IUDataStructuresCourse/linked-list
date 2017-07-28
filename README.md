@@ -1,2 +1,3 @@
-# linked-list
-pre-lecture assignment about linked lists and the sequence ADT
+# Lab 2: Linked Lists and the Sequence ADT
+
+Implement the methods 

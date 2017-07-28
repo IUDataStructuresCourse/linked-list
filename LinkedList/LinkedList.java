@@ -1,3 +1,4 @@
+import java.lang.UnsupportedOperationException;
 
 class Node<T> {
 	Node(T d, Node<T> n) { data = d; next = n; }
@@ -10,23 +11,23 @@ class ListIter<T> implements Iter<T> {
   Node<T> node;
 
   ListIter(Node<T> p) {
-      throw NotImplementedException;
+      throw new UnsupportedOperationException();
   }
   
   public T get() {
-      throw NotImplementedException;
+      throw new UnsupportedOperationException();
   }
 
   public void advance() {
-      throw NotImplementedException;
+      throw new UnsupportedOperationException();
   }
 
   public boolean equals(Iter<T> other) {
-      throw NotImplementedException;
+      throw new UnsupportedOperationException();
   }
 
   public ListIter<T> clone() {
-      throw NotImplementedException;
+      throw new UnsupportedOperationException();
   }  
   
 }
@@ -35,24 +36,24 @@ public class LinkedList<T> implements Sequence<T> {
 	private Node<T> front;
 	
 	public LinkedList() {
-	    throw NotImplementedException;
+	    throw new UnsupportedOperationException();
 	}
 	
 	public ListIter<T> begin() {
-	    throw NotImplementedException;	    
+	    throw new UnsupportedOperationException();	    
 	}
 	
 	public ListIter<T> end() {
-	    throw NotImplementedException;
+	    throw new UnsupportedOperationException();
 	}
 	
 	public void insert_front(T x) {
-	    throw NotImplementedException;
+	    throw new UnsupportedOperationException();
 	}
 	
 	// precondition: pos is a legit position in the sequence
 	public void insert_after(ListIter<T> pos, T x) {
-
+	    throw new UnsupportedOperationException();
 	}
 	
 	public static void main(String[] args) {
