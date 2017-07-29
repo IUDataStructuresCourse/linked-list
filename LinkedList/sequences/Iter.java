@@ -1,3 +1,5 @@
+package sequences;
+
 public interface Iter<T> {
     
     // The get() method returns the element at the current position.

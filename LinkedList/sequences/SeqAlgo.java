@@ -1,4 +1,6 @@
-class SeqAlgo {
+package sequences;
+
+public class SeqAlgo {
 	
 	public static <T> boolean equals(Sequence<T> s1, Sequence<T> s2) {
 		Iter<T> i = s1.begin();

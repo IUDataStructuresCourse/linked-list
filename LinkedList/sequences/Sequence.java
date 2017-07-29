@@ -1,3 +1,5 @@
+package sequences;
+
 public interface Sequence<T> {
     // The begin() method returns an iterator whose position is the
     // first element of the sequence, if there is one. Otherwise, it's

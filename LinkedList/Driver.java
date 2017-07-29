@@ -1,64 +1,9 @@
-import java.lang.UnsupportedOperationException;
+import sequences.ArraySequence;
+import sequences.LinkedList;
+import sequences.SeqAlgo;
 
-class Node<T> {
-    Node(T d, Node<T> n) { data = d; next = n; }
-    T data;
-    Node<T> next;
-}
+public class Driver {
 
-class ListIter<T> implements Iter<T> {
-        
-    Node<T> node;
-
-    ListIter(Node<T> p) {
-        throw new UnsupportedOperationException();
-    }
-  
-    public T get() {
-        throw new UnsupportedOperationException();
-    }
-
-    public void advance() {
-        throw new UnsupportedOperationException();
-    }
-
-    public boolean equals(Iter<T> other) {
-        throw new UnsupportedOperationException();
-    }
-
-    public ListIter<T> clone() {
-        throw new UnsupportedOperationException();
-    }  
-  
-}
-
-public class LinkedList<T> implements Sequence<T> {
-    private Node<T> front;
-        
-    // Create a linked list with no elements.
-    public LinkedList() {
-        throw new UnsupportedOperationException();
-    }
-        
-    public ListIter<T> begin() {
-        throw new UnsupportedOperationException();          
-    }
-        
-    public ListIter<T> end() {
-        throw new UnsupportedOperationException();
-    }
-        
-    // Add element x to the front of the list.
-    public void insert_front(T x) {
-        throw new UnsupportedOperationException();
-    }
-
-    // Insert element x so that it appears one position after the position pos.
-    // precondition: pos is the position of an element in the sequence.
-    public void insert_after(ListIter<T> pos, T x) {
-        throw new UnsupportedOperationException();
-    }
-        
     public static void main(String[] args) {
         {
             // Test begin, end, and Iter.equals for empty list
@@ -81,7 +26,7 @@ public class LinkedList<T> implements Sequence<T> {
         {
             LinkedList<Integer> L = new LinkedList<Integer>();          
             L.insert_front(1);
-            ListIter<Integer> i = L.begin();
+            LinkedList<Integer>.ListIter i = L.begin();
                         
             // Test insert_after on the first position
             L.insert_after(i, 2);
@@ -100,5 +45,5 @@ public class LinkedList<T> implements Sequence<T> {
         }
         System.out.println("tests passed");
     }
-
+    
 }
