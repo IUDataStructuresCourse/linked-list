@@ -35,6 +35,7 @@ class ListIter<T> implements Iter<T> {
 public class LinkedList<T> implements Sequence<T> {
     private Node<T> front;
         
+    // Create a linked list with no elements.
     public LinkedList() {
         throw new UnsupportedOperationException();
     }
@@ -47,11 +48,13 @@ public class LinkedList<T> implements Sequence<T> {
         throw new UnsupportedOperationException();
     }
         
+    // Add element x to the front of the list.
     public void insert_front(T x) {
         throw new UnsupportedOperationException();
     }
-        
-    // precondition: pos is a legit position in the sequence
+
+    // Insert element x so that it appears one position after the position pos.
+    // precondition: pos is the position of an element in the sequence.
     public void insert_after(ListIter<T> pos, T x) {
         throw new UnsupportedOperationException();
     }
