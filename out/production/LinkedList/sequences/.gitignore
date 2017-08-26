@@ -1,10 +1,10 @@
-/ArrayIter.class
-/ArraySequence.class
-/Iter.class
 /LinkedList.class
 /ListIter.class
 /Node.class
-/SeqAlgo.class
+/ArrayIter.class
+/ArraySequence.class
+/Iter.class
 /Sequence.class
-/LinkedList$ListIter.class
+/SeqAlgo.class
 /ArraySequence$ArrayIter.class
+/LinkedList$ListIter.class

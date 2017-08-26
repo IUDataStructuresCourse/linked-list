@@ -1,8 +1,8 @@
 package sequences;
 
 public interface Iter<T> {
-    
-    // The get() method returns the element at the current position.
+	
+	// The get() method returns the element at the current position.
     T get();
     
     // The advance() method moves the iterator to the next position.
@@ -12,8 +12,7 @@ public interface Iter<T> {
     // as the other iterator.
     boolean equals(Iter<T> other);
     
-    // The clone() method creates a new iterator at the same position
-    // as this iterator.
+    // The clone() method creates a new iterator at the same position as this iterator.
     Iter<T> clone();
 
 }

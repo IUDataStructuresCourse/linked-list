@@ -8,7 +8,7 @@ public class ArraySequence<T> implements Sequence<T> {
 	public ArrayIter<T> begin() { return new ArrayIter<T>(array,0); }
 	public ArrayIter<T> end() { return new ArrayIter<T>(array, array.length); }
 	
-	public class ArrayIter<T> implements Iter<T> {
+	class ArrayIter<T> implements Iter<T> {
 		private T[] array;
 		private int pos;
 		public ArrayIter(T[] a, int p) { array = a; pos = p; }
@@ -20,6 +20,5 @@ public class ArraySequence<T> implements Sequence<T> {
 			return pos == i.pos;
 		}
 	}
-
 }
 
