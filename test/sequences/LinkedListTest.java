@@ -14,14 +14,14 @@ public class LinkedListTest {
         {
             LinkedList<Integer> L = new LinkedList<Integer>();
             L.insert_front(3);
-            assert L.begin().get() == 3;
+            assertEquals( (int)L.begin().get(), 3);
         }
         {
             // Test a sequence of insert_front's
             LinkedList<Integer> L = new LinkedList<Integer>();
             L.insert_front(3); L.insert_front(2); L.insert_front(1);
             Integer A[] = {1,2,3};
-            assert SeqAlgo.equals(L, new ArraySequence<Integer>(A));
+            assertTrue(SeqAlgo.equals(L, new ArraySequence<Integer>(A)));
         }
     }
 
@@ -38,13 +38,13 @@ public class LinkedListTest {
         i = L.begin(); i.advance();
         L.insert_after(i, 4);
         Integer B[] = {1,2,4};
-        assert SeqAlgo.equals(L, new ArraySequence<Integer>(B));
+        assertTrue(SeqAlgo.equals(L, new ArraySequence<Integer>(B)));
 
         // Test insert_after in the middle
         i = L.begin(); i.advance();
         L.insert_after(i, 3);
         Integer C[] = {1,2,3,4};
-        assert SeqAlgo.equals(L, new ArraySequence<Integer>(C));
+        assertTrue(SeqAlgo.equals(L, new ArraySequence<Integer>(C)));
     }
 
 }
